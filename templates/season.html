@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>SeasonS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <style type="text/css">
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+            font-family: 'Gothic A1', sans-serif;
+        }
+
+        .wrap {
+            width: auto;
+            max-height: 400px;
+            background-color: beige;
+        }
+
+        .comment {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .size {
+            width: auto;
+            height: auto;
+        }
+
+        .form-post {
+            max-width: 500px;
+            padding: 2rem;
+            margin: 2rem auto;
+            border-color: #e9ecef;
+            border-radius: 0.3rem;
+            border: solid;
+            display: block;
+        }
+
+        #post-box {
+            display: none;
+        }
+
+        .order {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function listing() {
+            // 1. 리뷰 목록을 서버에 요청하기
+            $.ajax({
+                type: "GET",
+                url: "/drinks",
+                data: {},
+                success: function (response) {
+                    // 2. 요청 성공 여부 확인하기
+                    if (response['result'] == 'success') {
+                        let reviews = response['drinks'];
+                        // 3. 요청 성공했을 때 리뷰를 올바르게 화면에 나타내기
+                        for (let i = 0; i < drinks.length; i++) {
+                            make_card(drinks[i]['cafe'], drinks[i]['menu']);
+                        }
+                    } else {
+                        alert('음료정보를 받아오지 못했습니다');
+                    }
+                }
+            })
+        }
+
+        function make_card(cafe, menu, start, due, img) {
+            let template_html = `
+                <div class="card">
+                    <img class="card-img-top"
+                        src="${img}"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <a href="#" class="cafe-title">${cafe}</a>
+                        <p class="card-text menu">${menu}</p>
+                        <p class="card-text start">${start}</p>
+                        <p class="card-text due">${due}</p>
+                    </div>
+                </div>
+                `;
+                $("#card").append(template_html);
+        }
+
+        function listing() {
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/post",
+                data: {},
+                success: function (response) {
+                    let articles = response['articles']
+                    if (response['result'] == "success") {
+                        for (let i = 0; i < articles.length; i++) {
+                            console.log(articles[i]);
+                            let atc = articles[i];
+                            make_card(atc['comment'], atc['desc'], atc['image'], atc['title'],atc['url'])
+                        }
+                    }
+                    else {
+                        alert("데이터를 불러오지 못했습니다.");
+                        return;
+                    }
+                }
+            })
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="jumbotron text-center">
+        <h1>SeasonS</h1>
+        <p>카페별 시즌메뉴를 친절하게 정리해놓은 사이트</p>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Main Page</a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span
+                class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">봄</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">여름</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">가을</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">겨울</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="card">
+        <img class="card-img-top"
+            src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+            alt="Card image cap">
+        <div class="card-body">
+            <a href="#" class="cafe-title">여기 기사 제목이 들어가죠</a>
+            <p class="card-text menu">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+            <p class="card-text start">여기에 코멘트가 들어갑니다.</p>
+            <p class="card-text due">여기에 코멘트가 들어갑니다.</p>
+        </div>
+    </div>
+</body>
+
+</html>

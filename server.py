@@ -8,13 +8,13 @@ client = MongoClient('localhost', 27017)  # mongoDB는 27017 포트로 돌아갑
 db = client.dbsparta  # 'dbsparta'라는 이름의 db를 만듭니다.
 
 
-## HTML을 주는 부분
+# HTML을 주는 부분
 @app.route('/')
 def home():
     return render_template('Draft.html')
 
 
-## API 역할을 하는 부분
+# API 역할을 하는 부분
 @app.route('/drinks', methods=['GET'])
 def read_drinks():
     # 1. DB에서 리뷰 정보 모두 가져오기
