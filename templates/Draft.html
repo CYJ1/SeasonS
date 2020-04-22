@@ -11,10 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -37,12 +37,17 @@
         .wrap {
             width: auto;
             max-height: 400px;
-            background-color: white;
+            background-color: beige;
         }
 
         .comment {
             color: blue;
             font-weight: bold;
+        }
+
+        .size {
+            width: auto;
+            height: auto;
         }
 
         .form-post {
@@ -64,6 +69,38 @@
         }
     </style>
 
+    <script>
+        function listing() {
+            // 1. 리뷰 목록을 서버에 요청하기
+            $.ajax({
+                type: "GET",
+                url: "/drinks",
+                data: {},
+                success: function (response) {
+                    // 2. 요청 성공 여부 확인하기
+                    if (response['result'] == 'success') {
+                        let reviews = response['drinks'];
+                        // 3. 요청 성공했을 때 리뷰를 올바르게 화면에 나타내기
+                        for (let i = 0; i < drinks.length; i++) {
+                            make_card(drinks[i]['cafe'], drinks[i]['menu']);
+                        }
+                    } else {
+                        alert('음료정보를 받아오지 못했습니다');
+                    }
+                }
+            })
+        }
+
+        function make_card(cafe, menu) {
+            let temp_html = '<tr>\
+                                <td>'+ cafe + '</td>\
+                                <td>'+ menu + '</td>\
+                            </tr>';
+            $('#cafe_order').append(temp_html);
+        }
+
+    </script>
+
 </head>
 
 <body>
@@ -82,12 +119,13 @@
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         봄</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">벚꽃</a>
-                            <a class="dropdown-item" href="#">딸기</a>
-                            <a class="dropdown-item" href="#">망고</a>
-                        </div>
-                    </li>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">스타벅스</a>
+                        <a class="dropdown-item" href="#">투썸플레이스</a>
+                        <a class="dropdown-item" href="#">할리스커피</a>
+                        <a class="dropdown-item" href="#">카페베네</a>
+                    </div>
+                </li>
                 <li class="nav-item"><a href="#" class="nav-link">여름</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">가을</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">겨울</a></li>
@@ -99,41 +137,43 @@
 
     <div class="s003 wrap">
         <form>
-          <div class="inner-form wrap wrap">
-            <div class="input-field first-wrap wrap">
-              <div class="input-select">
-                <select data-trigger="" name="choices-single-defaul">
-                  <option placeholder="">Category</option>
-                  <option>스타벅스</option>
-                  <option>투썸플레이스</option>
-                  <option>할리스커피</option>
-                  <option>카페베네</option>
-                </select>
-              </div>
+            <div class="inner-form">
+                <div class="input-field first-wrap">
+                    <div class="input-select">
+                        <select data-trigger="" name="choices-single-defaul">
+                            <option placeholder="">카페이름</option>
+                            <option>스타벅스</option>
+                            <option>투썸플레이스</option>
+                            <option>할리스커피</option>
+                            <option>카페베네</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-field second-wrap">
+                    <input id="search" type="text" placeholder="Enter Keywords?" />
+                </div>
+                <div class="input-field third-wrap">
+                    <button class="btn-search" type="button">
+                        <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas"
+                            data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="input-field second-wrap">
-              <input id="search" type="text" placeholder="먹고싶은 음료를 검색해주세요" />
-            </div>
-            <div class="input-field third-wrap">
-              <button class="btn-search" type="button">
-                <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
         </form>
-      </div>
-      <script src="js/extention/choices.js"></script>
-      <script>
+    </div>
+    <script src="js/extention/choices.js"></script>
+    <script>
         const choices = new Choices('[data-trigger]',
-        {
-          searchEnabled: false,
-          itemSelectText: '',
-        });
-  
-      </script>
+            {
+                searchEnabled: false,
+                itemSelectText: '',
+            });
 
+    </script>
     <div class="container pt-3">
         <div class="row">
             <!-- left content -->
@@ -158,14 +198,18 @@
                 </ul>
                 <hr>
 
-                <h3>카페별 대표음료</h3> 
-                <img src="https://lh3.googleusercontent.com/proxy/onzpC653F31meLHI56tkMUPIoqcDZDEDhScH9XKFLNOJS_D-6gfNYTKrj7dNZ9mLqjmmgXVDCMsqXraYlbWs5ZPQkqhv3JpBiT5uZ-i9QMLHzZcFDijBKwg6DH4T9-07tQ" class="img-fluid rounded p-3">
-                <p class="order">스타벅스 돌체라떼</p> 
-                <img src="https://lh3.googleusercontent.com/proxy/PW7atdSBLN9mocI-_eTbY4Lrykwffuq7Mon-vOjjOdXVqP2Fqwc_BSrUdXVWQrQBTGbx27sAjQZ59uqNZSLCZrs3BaV7cNqSO9eOGoZErbQKFzZn" class="img-fluid rounded p-3">
-                <p class="order">투썸플레이스 로얄 밀크티 쉐이크</p> 
-                <img src="https://lh3.googleusercontent.com/proxy/8IafXzK1Uo_su73sJbLb4Qgbo1FmN5XsN_KU3WaXoFlysL_Q8Tt8JEqKcA-3yM21nCMva5qNHG0gRbXF1VJT9tNTzk8X8XZylAFoJOYYFnDwjoazJ7U" class="img-fluid rounded p-3">
-                <p class="order">할리스커피 바닐라 딜라이트</p> 
-                <img src="https://lh3.googleusercontent.com/proxy/U6teQcG7bm4GoquonaGVakJBZF4_fravED7eQBCHOrd04KRvqEUGiL6KljUAGg1zT1hraS5eX6ZDMczdHLXRbUJ3bEUZjcec0wypcafd9YA6XFKujosTUTS8nMwN78c2E1suVYfKVozCrV0gnNq2yYTwuy2tQsiQzRz3w7hwn30" class="img-fluid rounded p-3">
+                <h3>카페별 대표음료</h3>
+                <img src="https://lh3.googleusercontent.com/proxy/onzpC653F31meLHI56tkMUPIoqcDZDEDhScH9XKFLNOJS_D-6gfNYTKrj7dNZ9mLqjmmgXVDCMsqXraYlbWs5ZPQkqhv3JpBiT5uZ-i9QMLHzZcFDijBKwg6DH4T9-07tQ"
+                    class="img-fluid rounded p-3">
+                <p class="order">스타벅스 돌체라떼</p>
+                <img src="https://lh3.googleusercontent.com/proxy/PW7atdSBLN9mocI-_eTbY4Lrykwffuq7Mon-vOjjOdXVqP2Fqwc_BSrUdXVWQrQBTGbx27sAjQZ59uqNZSLCZrs3BaV7cNqSO9eOGoZErbQKFzZn"
+                    class="img-fluid rounded p-3">
+                <p class="order">투썸플레이스 로얄 밀크티 쉐이크</p>
+                <img src="https://lh3.googleusercontent.com/proxy/8IafXzK1Uo_su73sJbLb4Qgbo1FmN5XsN_KU3WaXoFlysL_Q8Tt8JEqKcA-3yM21nCMva5qNHG0gRbXF1VJT9tNTzk8X8XZylAFoJOYYFnDwjoazJ7U"
+                    class="img-fluid rounded p-3">
+                <p class="order">할리스커피 바닐라 딜라이트</p>
+                <img src="https://lh3.googleusercontent.com/proxy/U6teQcG7bm4GoquonaGVakJBZF4_fravED7eQBCHOrd04KRvqEUGiL6KljUAGg1zT1hraS5eX6ZDMczdHLXRbUJ3bEUZjcec0wypcafd9YA6XFKujosTUTS8nMwN78c2E1suVYfKVozCrV0gnNq2yYTwuy2tQsiQzRz3w7hwn30"
+                    class="img-fluid rounded p-3">
                 <p class="order">카페베네 리얼초콜릿라떼</p>
 
             </div>
@@ -179,7 +223,10 @@
                 <!-- side menu (link) -->
                 <h3>할리스 커피</h3>
                 <p>2020 봄의 특별함</p>
-                <div class="text-center"> <img src="http://admin.hollys.co.kr/upload/menu/new/menuNew_202002270401461611.jpg" class="img-fluid rounded mb-3"> </div>
+                <div class="text-center"> <img
+                        src="http://admin.hollys.co.kr/upload/menu/new/menuNew_202002270401461611.jpg"
+                        class="img-fluid rounded mb-3"> </div>
+                <button id="cafe_order">db확인용</button>
             </div>
         </div>
     </div>
