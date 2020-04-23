@@ -39,12 +39,6 @@
             margin: 0px 5%;
         }
 
-        .wrap {
-            width: auto;
-            max-height: 400px;
-            background-color: beige;
-        }
-
         .comment {
             color: blue;
             font-weight: bold;
@@ -64,6 +58,15 @@
             border: solid;
             display: block;
         }
+
+        .main-color {
+            background-color: beige;
+        }
+
+        .color {
+            background-color: gray;
+        }
+
 
         #post-box {
             display: none;
@@ -87,7 +90,7 @@
                         let reviews = response['drinks'];
                         // 3. 요청 성공했을 때 리뷰를 올바르게 화면에 나타내기
                         for (let i = 0; i < drinks.length; i++) {
-                            make_card(drinks[i]['cafe'], drinks[i]['menu']);
+                            make_card(drinks[i]['cafe'], drinks[i]['menu'], drinks[i]['start'], drinks[i]['due'], drinks[i]['img']);
                         }
                     } else {
                         alert('음료정보를 받아오지 못했습니다');
@@ -103,51 +106,27 @@
                         src="${img}"
                         alt="Card image cap">
                     <div class="card-body">
-                        <a href="#" class="cafe-title">${cafe}</a>
-                        <p class="card-text menu">${menu}</p>
-                        <p class="card-text start">${start}</p>
-                        <p class="card-text due">${due}</p>
+                        <a href="#" class="cafe-title">${cafe}</a><hr>
+                        <p class="menu">${menu}</p>
+                        <p class="start">${start}</p>
+                        <p class="due">${due}</p>
                     </div>
                 </div>
                 `;
             $("#cards-box").append(template_html);
         }
-
-        function listing() {
-            $.ajax({
-                type: "GET",
-                url: "http://spartacodingclub.shop/post",
-                data: {},
-                success: function (response) {
-                    let articles = response['articles']
-                    if (response['result'] == "success") {
-                        for (let i = 0; i < articles.length; i++) {
-                            console.log(articles[i]);
-                            let atc = articles[i];
-                            make_card(atc['comment'], atc['desc'], atc['image'], atc['title'], atc['url'])
-                        }
-                    }
-                    else {
-                        alert("데이터를 불러오지 못했습니다.");
-                        return;
-                    }
-                }
-            })
-        }
-
     </script>
 
 </head>
 
 <body>
     <!-- header -->
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center main-color">
         <h1>SeasonS</h1>
         <p>카페별 시즌메뉴를 친절하게 정리해놓은 사이트</p>
     </div>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark color">
         <a href="#" class="navbar-brand">Main Page</a>
-
         <!-- Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span
                 class="navbar-toggler-icon"></span> </button>
@@ -169,10 +148,11 @@
                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
                 alt="Card image cap">
             <div class="card-body">
-                <a href="#" class="name">카페 종류</a>
-                <p class="number">메뉴 이름</p>
-                <p class="day">시작 날짜</p>
-                <p class="kind">종료 날짜</p>
+                <a href="#" class="cafe-title">카페 종류</a>
+                <hr>
+                <p class="menu">메뉴 이름</p>
+                <p class="start">시작 날짜</p>
+                <p class="due">종료 날짜</p>
             </div>
         </div>
         <div class="card">
@@ -180,10 +160,11 @@
                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
                 alt="Card image cap">
             <div class="card-body">
-                <a href="#" class="name">카페 종류</a>
-                <p class="number">메뉴 이름</p>
-                <p class="day">시작 날짜</p>
-                <p class="kind">종료 날짜</p>
+                <a href="#" class="cafe-title">카페 종류</a>
+                <hr>
+                <p class="menu">메뉴 이름</p>
+                <p class="start">시작 날짜</p>
+                <p class="due">종료 날짜</p>
             </div>
         </div>
         <div class="card">
@@ -191,10 +172,11 @@
                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
                 alt="Card image cap">
             <div class="card-body">
-                <a href="#" class="name">카페 종류</a>
-                <p class="number">메뉴 이름</p>
-                <p class="day">시작 날짜</p>
-                <p class="kind">종료 날짜</p>
+                <a href="#" class="cafe-title">카페 종류</a>
+                <hr>
+                <p class="menu">메뉴 이름</p>
+                <p class="start">시작 날짜</p>
+                <p class="due">종료 날짜</p>
             </div>
         </div>
         <div class="card">
@@ -202,10 +184,11 @@
                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
                 alt="Card image cap">
             <div class="card-body">
-                <a href="#" class="name">카페 종류</a>
-                <p class="number">메뉴 이름</p>
-                <p class="day">시작 날짜</p>
-                <p class="kind">종료 날짜</p>
+                <a href="#" class="cafe-title">카페 종류</a>
+                <hr>
+                <p class="menu">메뉴 이름</p>
+                <p class="start">시작 날짜</p>
+                <p class="due">종료 날짜</p>
             </div>
         </div>
         <div class="card">
@@ -213,10 +196,11 @@
                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
                 alt="Card image cap">
             <div class="card-body">
-                <a href="#" class="name text">카페 종류</a>
-                <p class="number">메뉴 이름</p>
-                <p class="day">시작 날짜</p>
-                <p class="kind">종료 날짜</p>
+                <a href="#" class="cafe-title">카페 종류</a>
+                <hr>
+                <p class="menu">메뉴 이름</p>
+                <p class="start">시작 날짜</p>
+                <p class="due">종료 날짜</p>
             </div>
         </div>
         <div class="card">
@@ -224,17 +208,19 @@
                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
                 alt="Card image cap">
             <div class="card-body">
-                <a href="#" class="name">카페 종류</a>
-                <p class="number">메뉴 이름</p>
-                <p class="day">시작 날짜</p>
-                <p class="kind">종료 날짜</p>
+                <a href="#" class="cafe-title">카페 종류</a>
+                <hr>
+                <p class="menu">메뉴 이름</p>
+                <p class="start">시작 날짜</p>
+                <p class="due">종료 날짜</p>
             </div>
         </div>
-    </div>  
 
-     <!-- footer -->
-     <hr>
-     <div class="jumbotron text-center mt-5 mb-0">
+    </div>
+
+    <!-- footer -->
+    <hr>
+    <div class="jumbotron text-center mt-5 mb-0">
         <h3 class="text-secondary">SeasonS</h3>
         <p>SeasonS’s Homepage is powered by <span class="text-primary">Elinnie</span> / Designed by <span
                 class="text-primary">Elinnie</span></p>

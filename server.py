@@ -14,7 +14,7 @@ def home():
     return render_template('Draft.html')
 
 
-# API 역할을 하는 부분
+# API 역할을 하는 부분.
 @app.route('/drinks', methods=['GET'])
 def read_drinks():
     # 1. DB에서 리뷰 정보 모두 가져오기
