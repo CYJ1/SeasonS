@@ -34,6 +34,11 @@
             font-family: 'Gothic A1', sans-serif;
         }
 
+        .form {
+            flex: 1;
+            margin: 0px 5%;
+        }
+
         .wrap {
             width: auto;
             max-height: 400px;
@@ -105,7 +110,7 @@
                     </div>
                 </div>
                 `;
-                $("#card").append(template_html);
+            $("#cards-box").append(template_html);
         }
 
         function listing() {
@@ -119,7 +124,7 @@
                         for (let i = 0; i < articles.length; i++) {
                             console.log(articles[i]);
                             let atc = articles[i];
-                            make_card(atc['comment'], atc['desc'], atc['image'], atc['title'],atc['url'])
+                            make_card(atc['comment'], atc['desc'], atc['image'], atc['title'], atc['url'])
                         }
                     }
                     else {
@@ -157,17 +162,86 @@
     </nav>
 
     <!-- content -->
-    <div class="card">
-        <img class="card-img-top"
-            src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-            alt="Card image cap">
-        <div class="card-body">
-            <a href="#" class="cafe-title">여기 기사 제목이 들어가죠</a>
-            <p class="card-text menu">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-            <p class="card-text start">여기에 코멘트가 들어갑니다.</p>
-            <p class="card-text due">여기에 코멘트가 들어갑니다.</p>
+    <hr>
+    <div class="card-columns form" id="cards-box">
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <a href="#" class="name">카페 종류</a>
+                <p class="number">메뉴 이름</p>
+                <p class="day">시작 날짜</p>
+                <p class="kind">종료 날짜</p>
+            </div>
         </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <a href="#" class="name">카페 종류</a>
+                <p class="number">메뉴 이름</p>
+                <p class="day">시작 날짜</p>
+                <p class="kind">종료 날짜</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <a href="#" class="name">카페 종류</a>
+                <p class="number">메뉴 이름</p>
+                <p class="day">시작 날짜</p>
+                <p class="kind">종료 날짜</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <a href="#" class="name">카페 종류</a>
+                <p class="number">메뉴 이름</p>
+                <p class="day">시작 날짜</p>
+                <p class="kind">종료 날짜</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <a href="#" class="name text">카페 종류</a>
+                <p class="number">메뉴 이름</p>
+                <p class="day">시작 날짜</p>
+                <p class="kind">종료 날짜</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <a href="#" class="name">카페 종류</a>
+                <p class="number">메뉴 이름</p>
+                <p class="day">시작 날짜</p>
+                <p class="kind">종료 날짜</p>
+            </div>
+        </div>
+    </div>  
+
+     <!-- footer -->
+     <hr>
+     <div class="jumbotron text-center mt-5 mb-0">
+        <h3 class="text-secondary">SeasonS</h3>
+        <p>SeasonS’s Homepage is powered by <span class="text-primary">Elinnie</span> / Designed by <span
+                class="text-primary">Elinnie</span></p>
     </div>
+
+
+
 </body>
 
 </html>
