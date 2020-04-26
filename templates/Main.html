@@ -85,38 +85,6 @@
 
     </style>
 
-    <script>
-        function listing() {
-            // 1. 리뷰 목록을 서버에 요청하기
-            $.ajax({
-                type: "GET",
-                url: "/drinks",
-                data: {},
-                success: function (response) {
-                    // 2. 요청 성공 여부 확인하기
-                    if (response['result'] == 'success') {
-                        let reviews = response['drinks'];
-                        // 3. 요청 성공했을 때 리뷰를 올바르게 화면에 나타내기
-                        for (let i = 0; i < drinks.length; i++) {
-                            make_card(drinks[i]['cafe'], drinks[i]['menu']);
-                        }
-                    } else {
-                        alert('음료정보를 받아오지 못했습니다');
-                    }
-                }
-            })
-        }
-
-        function make_card(cafe, menu) {
-            let temp_html = '<tr>\
-                                <td>'+ cafe + '</td>\
-                                <td>'+ menu + '</td>\
-                            </tr>';
-            $('#cafe_order').append(temp_html);
-        }
-
-    </script>
-
 </head>
 
 <body>
