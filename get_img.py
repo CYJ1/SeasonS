@@ -10,6 +10,7 @@ from urllib.request import urlopen, Request
 
 from bs4 import BeautifulSoup
 
+
 def configure_logging():
     logger = logging.getLogger('chardet.charsetprober')
     logger.setLevel(logging.INFO)
@@ -87,8 +88,8 @@ def run(query, save_directory, num_images=10):
 def main():
     parser = argparse.ArgumentParser(description='Scrape Google images')
     parser.add_argument('-s', '--search', default='bananas', type=str, help='search term')
+    parser.add_argument('-d', '--directory', default='D:\\SeasonS\\SeasonS\\img', type=str, help='save directory')
     parser.add_argument('-n', '--num_images', default=1, type=int, help='num images to save')
-    parser.add_argument('-d', '--directory', default='D:\SeasonS\SeasonS\img', type=str, help='save directory')
     args = parser.parse_args()
     run(args.search, args.directory, args.num_images)
 
