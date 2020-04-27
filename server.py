@@ -11,7 +11,7 @@ db = client.dbsparta  # 'dbsparta'라는 이름의 db를 만듭니다.
 # HTML을 주는 부분
 @app.route('/')
 def home():
-    return render_template('Draft.html')
+    return render_template('Main.html')
 
 
 # API 역할을 하는 부분.
@@ -24,4 +24,4 @@ def read_drinks():
 
 
 if __name__ == '__main__':
-    app.run('localhost', port=5000, debug=True)
+    app.run('0.0.0.0', port=5000, debug=True)

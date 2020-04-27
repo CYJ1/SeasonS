@@ -7,13 +7,18 @@ import random
 import errno
 import time
 from selenium.webdriver.common.keys import Keys
+from pymongo import MongoClient
 
 ###initial set
+
+
+client = MongoClient('localhost', 27017)
+db = client.dbsparta
 
 folder = ".image/"
 url = "https://www.google.com/search"
 webDriver = "./chromedriver/chromedriver.exe"
-searchItem = "루비 석류젤리 크림 프라푸치노"
+searchItem = "설향 딸기 생과일주스"
 size = 10
 
 params = {
@@ -72,3 +77,10 @@ except OSError as e:
 for i, src in zip(range(fileNum), srcURL):
     urllib.request.urlretrieve(src, saveDir + "/" + str(i) + ".jpg")
     print(i, "saved")
+
+
+doc = {
+    'name': searchItem,
+    'img_url': srcURL
+}
+db.hollys_drinks.insert_one(doc)

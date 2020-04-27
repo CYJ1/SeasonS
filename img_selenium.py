@@ -40,15 +40,15 @@ for x in browser.find_elements_by_xpath('//div[contains(@class,"rg_meta")]'):
     imgtype = json.loads(x.get_attribute('innerHTML'))["ity"]
 
     # 구글 이미지를 읽고 저장한다.
-    try:
-        req = urllib.request(img, headers={'User-Agent': header})
-        raw_img = urllib.request.urlopen(req).read()
-        File = open(os.path.join(searchterm, searchterm + "_" + str(counter) + "." + imgtype), "wb")
-        File.write(raw_img)
-        File.close()
-        succounter = succounter + 1
-    except:
-        print("can't get img")
+    # try:
+    #     req = urllib.request(img, headers={'User-Agent': header})
+    #     raw_img = urllib.request.urlopen(req).read()
+    #     File = open(os.path.join(searchterm, searchterm + "_" + str(counter) + "." + imgtype), "wb")
+    #     File.write(raw_img)
+    #     File.close()
+    #     succounter = succounter + 1
+    # except:
+    #     print("can't get img")
 
 print(succounter, "succesfully downloaded")
 browser.close()
