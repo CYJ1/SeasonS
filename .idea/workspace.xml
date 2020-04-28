@@ -1,95 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/img_crawling_selenium.py" line="20" />
+    <bookmark url="file://$PROJECT_DIR$/img_crawling_selenium.py" line="16" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0934b9f-bac2-4628-bcfe-59f41bd72ef8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Season_test_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/18.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/19.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/루비 석류젤리 크림 프라푸치노/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/18.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/19.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/21.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/22.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/23.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/24.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/25.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/26.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/27.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/28.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/29.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/30.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/31.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/32.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/33.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/46.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/47.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/48.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/블랙 와플칩 프라푸치노/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/23.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/24.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/25.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/31.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/32.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/33.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/34.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/35.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/36.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/37.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/38.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/39.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/40.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/41.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/42.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/43.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/44.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/45.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/46.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/47.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/48.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/49.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/50.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/51.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/코코넛 화이트 콜드브루/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/피치 젤리 아이스 티/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/.image/체리블라썸 루비 라떼/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img_crawling_selenium.py" beforeDir="false" afterPath="$PROJECT_DIR$/img_crawling_selenium.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_selenium.py" beforeDir="false" afterPath="$PROJECT_DIR$/img_selenium.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/season.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/season.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,19 +66,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="46">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Season_test_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img_crawling_selenium.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="283">
+              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img_selenium.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1127">
+              <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,6 +128,7 @@
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/img_selenium.py" />
         <option value="$PROJECT_DIR$/img_crawling_selenium.py" />
+        <option value="$PROJECT_DIR$/Season_test_server.py" />
       </list>
     </option>
   </component>
@@ -157,7 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,15 +150,11 @@
               <item name="SeasonS" type="b2602c69:ProjectViewProjectNode" />
               <item name="SeasonS" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SeasonS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeasonS" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,7 +172,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.img_crawling_selenium">
+  <component name="RunManager" selected="Python.Season_test_server">
+    <configuration name="Season_test_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SeasonS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Season_test_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="carwling_img" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SeasonS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,27 +207,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carwling_img.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_img" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SeasonS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_img.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,11 +280,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Season_test_server" />
         <item itemvalue="Python.img_crawling_selenium" />
         <item itemvalue="Python.selenium_2" />
         <item itemvalue="Python.carwling_img" />
         <item itemvalue="Python.img_selenium" />
-        <item itemvalue="Python.get_img" />
       </list>
     </recent_temporary>
   </component>
@@ -322,14 +303,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15664244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32547864" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4226804" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -352,27 +332,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img_try.py" />
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/carwling_img.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img_selenium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -386,13 +349,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img_selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1127">
+          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/sparta/myproject/sparta/4th_week/flask_pj/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/img_crawling_selenium.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="283">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/sparta/myproject/sparta/3rd_week/class/Python/hello.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Season_test_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
