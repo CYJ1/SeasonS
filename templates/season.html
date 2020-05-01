@@ -94,8 +94,13 @@
                     if (response['result'] == 'success') {
                         for (let i = 0; i < drinks.length; i++) {
                             let season = drinks[i];
+                            start = parseInt(season['start'])
+                            due = parseInt(season['due'])
+                            console.log(start) //type 변환 확인용
+                            // if (start >= 20200301 && due <= 20200601)
                             make_card(season['img'], season['cafe'], season['menu'], season['start'], season['due']);
-                        }
+                        }//봄 메뉴만 가져오기
+
                     } else {
                         alert('음료정보를 받아오지 못했습니다');
                     }
@@ -147,6 +152,8 @@
     <!-- content -->
     <hr>
     <div class="card-columns form" id="cards-box">
+        {% extends 'Main.html' %}
+        {% block content %}
         <div class="card">
             <img class="card-img-top"
                 src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
@@ -159,67 +166,7 @@
                 <p class="due">종료 날짜</p>
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top"
-                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                alt="Card image cap">
-            <div class="card-body">
-                <p class="cafe-title">카페 종류</p>
-                <hr>
-                <p class="menu">메뉴 이름</p>
-                <p class="start">시작 날짜</p>
-                <p class="due">종료 날짜</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top"
-                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                alt="Card image cap">
-            <div class="card-body">
-                <p class="cafe-title">카페 종류</p>
-                <hr>
-                <p class="menu">메뉴 이름</p>
-                <p class="start">시작 날짜</p>
-                <p class="due">종료 날짜</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top"
-                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                alt="Card image cap">
-            <div class="card-body">
-                <p class="cafe-title">카페 종류</p>
-                <hr>
-                <p class="menu">메뉴 이름</p>
-                <p class="start">시작 날짜</p>
-                <p class="due">종료 날짜</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top"
-                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                alt="Card image cap">
-            <div class="card-body">
-                <p class="cafe-title">카페 종류</p>
-                <hr>
-                <p class="menu">메뉴 이름</p>
-                <p class="start">시작 날짜</p>
-                <p class="due">종료 날짜</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top"
-                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
-                alt="Card image cap">
-            <div class="card-body">
-                <p class="cafe-title">카페 종류</p>
-                <hr>
-                <p class="menu">메뉴 이름</p>
-                <p class="start">시작 날짜</p>
-                <p class="due">종료 날짜</p>
-            </div>
-        </div>
-
+        {% endblock %}
     </div>
 
     <!-- footer -->
