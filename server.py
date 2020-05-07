@@ -13,9 +13,24 @@ def home():
     return render_template('Main.html')
 
 
-@app.route('/season')
-def get_season():
-    return render_template('season.html')
+@app.route('/spring')
+def get_spring():
+    return render_template('spring.html')
+
+
+@app.route('/summer')
+def get_summer():
+    return render_template('summer.html')
+
+
+@app.route('/autumn')
+def get_autumn():
+    return render_template('autumn.html')
+
+
+@app.route('/winter')
+def get_winter():
+    return render_template('winter.html')
 
 
 # API 역할을 하는 부분.

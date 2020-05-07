@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>SeasonS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <style type="text/css">
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+            font-family: 'Gothic A1', sans-serif;
+        }
+
+        .form {
+            flex: 1;
+            margin: 0px 5%;
+        }
+
+        .comment {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .size {
+            width: auto;
+            height: auto;
+        }
+
+        .form-post {
+            max-width: 500px;
+            padding: 2rem;
+            margin: 2rem auto;
+            border-color: #e9ecef;
+            border-radius: 0.3rem;
+            border: solid;
+            display: block;
+        }
+
+        .main-color {
+            background-color: beige;
+        }
+
+        .color {
+            background-color: gray;
+        }
+
+
+        #post-box {
+            display: none;
+        }
+
+        .order {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+        $(document).ready(function () {
+            $('#cards-box').html('');
+            listing();
+        });
+
+        function listing() {
+            $.ajax({
+                type: "GET",
+                url: "/drinks",
+                data: {},
+                success: function (response) {
+                    let drinks = response['drinks'];
+                    if (response['result'] == 'success') {
+                        for (let i = 0; i < drinks.length; i++) {
+                            let season = drinks[i];
+                            start = parseInt(season['start'])
+                            due = parseInt(season['due'])
+                            if (start >= 20200301 && due <= 20200601){
+                            make_card(season['img'], season['cafe'], season['menu'], season['start'], season['due']);
+                            }
+                        }//봄 메뉴만 가져오기
+
+                    } else {
+                        alert('음료정보를 받아오지 못했습니다');
+                    }
+                }
+            })
+        }
+
+        function make_card(img, cafe, menu, start, due) {
+            let template_html = `
+                <div class="card">
+                    <img class="card-img-top"
+                        src="${img}"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <p class="cafe-title"> 카페 : ${cafe}</p><hr>
+                        <p class="menu"> 메뉴 : ${menu}</p>
+                        <p class="start"> 시즌 시작일 : ${start}</p>
+                        <p class="due"> 시즌 종료일 : ${due}</p>
+                    </div>
+                </div>
+                `;
+            $("#cards-box").append(template_html);
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="jumbotron text-center main-color">
+        <h1>SeasonS</h1>
+        <p>카페별 시즌메뉴를 친절하게 정리해놓은 사이트</p>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark color">
+        <a href="/" class="navbar-brand">Main Page</a>
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span
+                class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/spring" class="nav-link">봄</a></li>
+                <li class="nav-item"><a href="/summer" class="nav-link">여름</a></li>
+                <li class="nav-item"><a href="/autumn" class="nav-link">가을</a></li>
+                <li class="nav-item"><a href="/winter" class="nav-link">겨울</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <hr>
+    <div class="card-columns form" id="cards-box">
+        {% extends 'Main.html' %}
+        {% block content %}
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <p class="cafe-title">카페 종류</p>
+                <hr>
+                <p class="menu">메뉴 이름</p>
+                <p class="start">시작 날짜</p>
+                <p class="due">종료 날짜</p>
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+
+    <!-- footer -->
+    <hr>
+    <div class="jumbotron text-center mt-5 mb-0">
+        <h3 class="text-secondary">SeasonS</h3>
+        <p>SeasonS’s Homepage is powered by <span class="text-primary">Elinnie</span> / Designed by <span
+                class="text-primary">Elinnie</span></p>
+    </div>
+
+
+
+</body>
+
+</html>
