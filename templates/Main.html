@@ -56,11 +56,11 @@
             display: none;
         }
 
-        .main-color{
+        .main-color {
             background-color: beige;
         }
 
-        .color{
+        .color {
             background-color: gray;
         }
 
@@ -82,8 +82,61 @@
             width: 1200px;
             height: 150px;
         }
-
     </style>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('#cards-box').html('');
+            listing();
+        });
+
+        function listing() {
+            let val = $('#input-value').val();
+            let ad = $('container pt-3');
+            $.ajax({
+                type: "GET",
+                url: "/drinks",
+                data: {},
+                success: function (response) {
+                    let drinks = response['drinks'];
+                    if (response['result'] == 'success') {
+                        for (let i = 0; i < drinks.length; i++) {
+                            let season = drinks[i];
+                            if (val == season['menu']) {
+                                ad.hide();
+                                make_card(season['img'], season['cafe'], season['menu'], season['start'], season['due']);
+                            }
+                        }//서치기능
+
+                    } else if(val == ''){
+                        alert('음료 혹은 카페 이름을 정확히 입력해주세요.');
+                    }
+                    else{
+                        alert('존재하지 않습니다.');
+                    }
+                }
+            })
+        }
+
+        function make_card(img, cafe, menu, start, due) {
+            let template_html = `
+            <div class="card">
+                <img class="card-img-top"
+                    src="${img}"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <p class="cafe-title"> 카페 : ${cafe}</p><hr>
+                    <p class="menu"> 메뉴 : ${menu}</p>
+                    <p class="start"> 시즌 시작일 : ${start}</p>
+                    <p class="due"> 시즌 종료일 : ${due}</p>
+                </div>
+            </div>
+            `;
+            $("#cards-box").append(template_html);
+        }
+    </script>
 
 </head>
 
@@ -112,9 +165,9 @@
     <hr>
     <div>
         <form class="well form-search wrap">
-            <input type="text" class="input-medium search-query form"
+            <input type="text" class="input-value"
                 style="text-align:center; height:50px; letter-spacing: -1.5px" placeholder="궁금한 음료를 검색해주세요!" />
-            <button type="submit" class="btn">Search</button>
+            <button class="btn" onclick="return listing()">Search</button>
         </form>
     </div>
     <hr>
@@ -184,4 +237,4 @@
 
 </body>
 
-</html>​
+</html>
