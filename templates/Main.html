@@ -32,28 +32,17 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .comment {
-            color: blue;
-            font-weight: bold;
-        }
-
         .size {
             width: auto;
             height: auto;
         }
 
-        .form-post {
-            max-width: 500px;
-            padding: 2rem;
-            margin: 2rem auto;
-            border-color: #e9ecef;
-            border-radius: 0.3rem;
-            border: solid;
-            display: block;
-        }
-
-        #post-box {
-            display: none;
+        .input-size {
+            text-align: center;
+            margin-top: 50px;
+            height: 45px;
+            width: max-content;
+            letter-spacing: -1.5px
         }
 
         .main-color {
@@ -82,19 +71,15 @@
             width: 1200px;
             height: 150px;
         }
+
     </style>
 
 
     <script>
 
-        $(document).ready(function () {
-            $('#cards-box').html('');
-            listing();
-        });
-
         function listing() {
             let val = $('#input-value').val();
-            let ad = $('container pt-3');
+            let ad = $('#contents');
             $.ajax({
                 type: "GET",
                 url: "/drinks",
@@ -102,19 +87,22 @@
                 success: function (response) {
                     let drinks = response['drinks'];
                     if (response['result'] == 'success') {
+                        let season = drinks[i];
                         for (let i = 0; i < drinks.length; i++) {
-                            let season = drinks[i];
-                            if (val == season['menu']) {
+                            if ((val == season['menu']) || (val == season['cafe'])) {
                                 ad.hide();
                                 make_card(season['img'], season['cafe'], season['menu'], season['start'], season['due']);
                             }
+                            else if (val == '') {
+                                alert('음료 혹은 카페 이름을 입력해주세요.');
+                                return;
+                            }
+                            else {
+                                alert('검색된 음료정보가 없습니다.');
+                                return;
+                            }
                         }//서치기능
 
-                    } else if(val == ''){
-                        alert('음료 혹은 카페 이름을 정확히 입력해주세요.');
-                    }
-                    else{
-                        alert('존재하지 않습니다.');
                     }
                 }
             })
@@ -134,6 +122,7 @@
                 </div>
             </div>
             `;
+            $("#cards-box").show();
             $("#cards-box").append(template_html);
         }
     </script>
@@ -164,15 +153,17 @@
     <!-- content -->
     <hr>
     <div>
-        <form class="well form-search wrap">
-            <input type="text" class="input-value"
-                style="text-align:center; height:50px; letter-spacing: -1.5px" placeholder="궁금한 음료를 검색해주세요!" />
-            <button class="btn" onclick="return listing()">Search</button>
-        </form>
+        <center>
+            <form class="well form-search wrap">
+                <input type="text" id="input-value" class="input-size" style="width: 800px;" placeholder="궁금한 음료를 검색해주세요!" />
+                <button class="btn" onclick="return listing()">Search</button>
+            </form>
+        </center>
+        
     </div>
     <hr>
 
-    <div class="container pt-3">
+    <div class="container pt-3" id="contents">
         <div class="row">
             <!-- left content -->
             <div class="col-sm-4">
@@ -227,6 +218,23 @@
             </div>
         </div>
     </div>
+
+    <hr>
+    <div class="card-columns form" id="cards-box">
+        <div class="card">
+            <img class="card-img-top"
+                src="https://www.eurail.com/content/dam/images/eurail/Italy%20OCP%20Promo%20Block.adaptive.767.1535627244182.jpg"
+                alt="Card image cap">
+            <div class="card-body">
+                <p class="cafe-title">카페 종류</p>
+                <hr>
+                <p class="menu">메뉴 이름</p>
+                <p class="start">시작 날짜</p>
+                <p class="due">종료 날짜</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- footer -->
     <div class="jumbotron text-center mt-5 mb-0">
